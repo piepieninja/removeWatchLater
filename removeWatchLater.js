@@ -1,5 +1,10 @@
 var watchpercent = 50; // remove things more than 50 % watched
 console.log("Removing videos watched more than: " + watchpercent + "%");
+// load all the videos
+var load_button = $('body').getElementsByClassName("yt-uix-button yt-uix-button-size-default yt-uix-button-default load-more-button yt-uix-load-more browse-items-load-more-button")[0];
+load_button.click();
+var load_button = $('body').getElementsByClassName("yt-uix-button yt-uix-button-size-default yt-uix-button-default load-more-button yt-uix-load-more browse-items-load-more-button")[0];
+load_button.click();
 // get the tiles 
 var tiles = $('body').getElementsByClassName("yt-uix-tile");
 var removed = 0;
